@@ -1,0 +1,107 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Apply a background color to the section */
+.about_section {
+  background-color: #c36800;
+  padding: 100px 0;
+}
+
+/* Center align the content within the container */
+.container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Style the heading */
+.about_section h2 {
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+.about_section h2 span {
+  color: #000; /* Change the color to your liking */
+}
+
+/* Style the detail box */
+.detail-box {
+  text-align: left;
+}
+
+.detail-box h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.detail-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Style the link */
+.detail-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f0e800; /* Button background color */
+  color: #000; /* Button text color */
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+.detail-box a:hover {
+  background-color: #fff700; /* Hover color */
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-list li a {
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.contact-link {
+  display: block;
+  text-decoration: none;
+  color: #333; /* Link color */
+  margin-top: 10px;
+}
+
+.social-contact {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+.img-box {
+  max-width: 100%;
+  text-align: center;
+}
+
+.img-box img {
+  max-width: 85%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px; /* Add round borders */
+}

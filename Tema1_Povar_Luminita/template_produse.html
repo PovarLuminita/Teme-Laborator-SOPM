@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+
+  <title> Products </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="cart/css/style.css">  
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" /> 
+  <link href="css/navbar.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/2.png">
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container1">
+        <div class="navbar-content">
+          <a href="home.html" class="logo">BeesNest</a>
+          <ul class="nav-links">
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+
+    <section class="slider_section ">
+      <div class="container1 ">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="detail-box">
+              <h1>
+                BeeSNesT
+              </h1>
+              <p>
+                The products we have are: polyfloral honey, acacia honey, linden honey, wildflower honey, fir honey, rapeseed honey, beeswax, honeycomb, royal jelly, bee bread, pollen, propolis.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/borcane_miere.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container1 ">
+        <div class="heading_container heading_center">
+          <h2 id="animated-text">
+            SOMETHING SPECIAL
+          </h2>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+          <script>
+            const textElement = document.getElementById('animated-text');
+            let isBlack = true;
+    
+            function animateText() {
+                gsap.to(textElement, {
+                    opacity: 1,
+                    duration: 1.5,
+                    scale: 1.2,
+                    onComplete: function () {
+                        if (isBlack) {
+                            textElement.style.color = 'yellow'; 
+                        } else {
+                            textElement.style.color = 'black'; 
+                        }
+                        isBlack = !isBlack; 
+                        gsap.to(textElement, {
+                            opacity: 0,
+                            duration: 1.5,
+                            scale: 1,
+                            onComplete: function () {
+                                animateText(); 
+                            }
+                        });
+                    }
+                });
+            }
+    
+            animateText();
+        </script>
+          <p>
+            We can't wait for you to order from us!
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/pastura.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Bee bread
+                </h5>
+                <p>
+                 <del>50 $</del> 
+                </p>
+                <p>39 $</p>
+				<a href="#0" class="js-cd-add-to-cart" data-price="39" index="1">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/fagure.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Honeycomb
+                </h5>
+                <p>
+                  <del>35 $</del>
+                </p>
+                <p>29 $</p>
+                <a href="#0" class="js-cd-add-to-cart" data-price="29" index="2">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/propolis.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  PROPOLIS
+                </h5>
+                <p>
+                  <del>40 $</del>
+                </p>
+                <p>25 $</p>
+                <a href="#0" class="js-cd-add-to-cart" data-price="25" index="3">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about_section layout_padding">
+    <div class="container1  ">
+      <div class="heading_container heading_center">
+        <h2>
+          Royal <span>jelly</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/laptisor_de_matca.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <p>
+              Royal jelly can protect the heart and circulatory system by reducing blood pressure. It can also improve blood sugar control and insulin sensitivity by reducing oxidative stress and inflammation. Royal jelly can enhance proper brain function.
+            </p>
+            <p>
+                60 $
+            </p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="60" index="4">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about_section2 layout_padding">
+    <div class="container1  ">
+      <div class="heading_container heading_center">
+        <h2>
+          <span>Beeswax</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/ceara_de_albine.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <p>
+              Furthermore, beeswax is also known for its antibacterial effect, making it an excellent support in reducing the effects of diaper rash and other skin infections.</p>
+            <p>
+                48 $
+            </p>
+				<a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="48" index="5">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about_section layout_padding">
+    <div class="container1  ">
+      <div class="heading_container heading_center">
+        <h2>
+          <span>Honey</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/borcane_miere.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <p>    
+              It improves cold symptoms.
+              It contains antioxidants.
+              Enhances the immune system.
+              It's an adjunct in treating burns.
+              An important part of the care ritual.
+            </p>
+            <p>
+                180 $
+            </p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="180" index="6"> Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about_section2 layout_padding">
+    <div class="container1  ">
+      <div class="heading_container heading_center">
+        <h2>
+          <span>POLLEN</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/polen.jpg" >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <p>
+              The high antioxidant content protects against free radicals and chronic diseases.
+              It can stimulate liver function and protect the liver from toxic substances.
+              It contains compounds with anti-inflammatory effects.
+            </p>
+            <p>
+                64 $ 
+            </p>
+            <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="64" index="7">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+ 
+ 
+<div class="cd-cart cd-cart--empty js-cd-cart">
+	<a href="#0" class="cd-cart__trigger text-replace">
+		
+		<ul class="cd-cart__count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .cd-cart__count -->
+	</a>
+
+	<div class="cd-cart__content">
+		<div class="cd-cart__layout">
+			<header class="cd-cart__header">
+				<h2>Cart</h2>
+				<span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+			</header>
+			
+			<div class="cd-cart__body">
+				<ul>
+					<!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			</div>
+
+			<footer class="cd-cart__footer">
+				<a href="cart/purchased.html" class="cd-cart__checkout">
+          <em>Checkout - $<span>0</span>
+            <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+            </svg>
+          </em>
+        </a>
+			</footer>
+		</div>
+	</div> <!-- .cd-cart__content -->
+</div> <!-- cd-cart -->
+
+<script src="cart/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="cart/js/main.js"></script> 
+</body>
+
+</html>
